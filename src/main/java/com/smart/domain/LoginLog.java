@@ -12,6 +12,7 @@ public class LoginLog implements Serializable{
 	private Date loginDate;
 
 	public String getIp() {
+		System.out.println(ip);
 		return ip;
 	}
 

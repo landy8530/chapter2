@@ -17,7 +17,9 @@ public class LoginLogDao {
 		Object[] args = { loginLog.getUserId(), loginLog.getIp(),
 				          loginLog.getLoginDate() };
 		jdbcTemplate.update(INSERT_LOGIN_LOG_SQL, args);
-	}
+
+        System.out.println(INSERT_LOGIN_LOG_SQL);
+    }
 
 	@Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
