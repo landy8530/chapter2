@@ -17,7 +17,8 @@ public class LoginLogDao {
 		Object[] args = { loginLog.getUserId(), loginLog.getIp(),
 				          loginLog.getLoginDate() };
 		jdbcTemplate.update(INSERT_LOGIN_LOG_SQL, args);
-
+		//注释一下，测试git的历史记录
+		//TODO 测试待处理事项
         System.out.println(INSERT_LOGIN_LOG_SQL);
     }
 
